@@ -1,0 +1,22 @@
+{
+    "UpdateMyInformationPage" : {
+    "ActionSequence" : 
+            [
+            {
+                 "Action" : "click",
+                 "WebElementType" : "class",
+                 "WebElement" : "name"
+             },   
+            {
+                 "Action" : "sendKey",
+                 "WebElementType" : "id",
+                 "WebElement" : {"q" : "?"}
+            },
+            {
+                 "Action" : "click",
+                 "WebElementType" : "id",
+                 "WebElement" : "go"           
+            }
+            ]         
+  	}  			
+}
