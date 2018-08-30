@@ -12,15 +12,9 @@
     {
         "ExpectedUpdateMyInformationResults": 
         {
-        "Credit":
+        "Address":
                    [        
-                    "Global Banking and Markets site search",            
-                    "credit"
-                   ],
-        "Equity":
-                   [        
-                    "Global Banking and Markets site search",            
-                    "equity"
+                    "Forrest HK New Address"
                    ]        
          }              
      }

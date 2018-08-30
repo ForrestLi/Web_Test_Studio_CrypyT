@@ -59,7 +59,12 @@ public abstract class  AbstractPage {
 		
 		ArrayList<HashMap<String, Object>> actionSequence = (ArrayList<HashMap<String, Object>>)pageAction.get("ActionSequence");
 		System.out.println("Action Sequence" + actionSequence);
-		
+		try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		for ( HashMap<String, Object> eachAction : actionSequence ){
 				Object webElement = eachAction.get("WebElement") ;
 			if( webElement instanceof String){
