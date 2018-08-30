@@ -33,8 +33,10 @@ public class CommonAutoUtils {
 		}else if ("value".equalsIgnoreCase(parameterType)){
 			xPathString = "//*[@value='" + plainTextParam + "']" ;
 		}else if ("img".equalsIgnoreCase(parameterType) ){
-			xPathString = "//img[contains(@src,'" + plainTextParam + "')]"  ;
-		}
+			xPathString = "//img[contains(@src,'" + plainTextParam + "')]";
+		} else if ("xpath".equalsIgnoreCase(parameterType)) {
+			xPathString = plainTextParam ;
+		 };		
 		return xPathString ;
 	}
 	

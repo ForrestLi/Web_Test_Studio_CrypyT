@@ -95,7 +95,7 @@ public abstract class  AbstractPage {
 	@SuppressWarnings("rawtypes")
 	private void invokeWebDriverAction(String action, String webElementType, String[] parameter){
 		try{
-			Class<?> clazz = Class.forName("com.ibm.automation.demoautomation.wrappers.WebDriverWrapper");
+			Class<?> clazz = Class.forName("web.cts.crpyto.wrappers.WebDriverWrapper");
 	        Class[] paramString = new Class[parameter.length];
 	        
 	        for(int i=0; i < paramString.length; ){

@@ -4,19 +4,24 @@
             [
             {
                  "Action" : "click",
-                 "WebElementType" : "class",
-                 "WebElement" : "name"
+                 "WebElementType" : "link",
+                 "WebElement" : "/my_page/info"
              },   
+            {
+                 "Action" : "click",
+                 "WebElementType" : "xpath",
+                 "WebElement" : "//button[@class='large btn btn-primary']"
+            },
             {
                  "Action" : "sendKey",
                  "WebElementType" : "id",
-                 "WebElement" : {"q" : "?"}
-            },
-            {
+                 "WebElement" : {"address1":"?"}
+             },
+             {
                  "Action" : "click",
-                 "WebElementType" : "id",
-                 "WebElement" : "go"           
-            }
+                 "WebElementType" : "xpath",
+                 "WebElement" : "//button[@class='large btn btn-primary']"
+            }            
             ]         
   	}  			
 }
