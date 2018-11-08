@@ -41,7 +41,7 @@ public class UpdateMyInformationPageTest extends AbstractBaseTest {
 	@Before
 	public void beforeTest() throws Exception {
 		
-		logger.info("Begining the SiteSearchResults page test...");
+		logger.info("Begining the Update My Information page test...");
 		TestContextManager testContextManager = new TestContextManager(getClass() );
 		testContextManager.prepareTestInstance(this);
 		setUpChecks("SiteSearchResultsPageTest");
@@ -54,21 +54,21 @@ public class UpdateMyInformationPageTest extends AbstractBaseTest {
     	Assert.assertTrue(updateMyInformationPage.updateMyInformation(inputParams));   	
     }
 	
-//    @Test
-//	public void searchedContentValidationTestCase() throws Exception {
-//		
-//		logger.info("Checking and validating for the content of search sumary page ...");
-//		
-//		@SuppressWarnings("unchecked")
-//		Map<String, Object> siteSearchResultsPageQueryResultMap = (Map<String, Object>)getParsedData(testExpectedResultsDataFileName).get("SiteSearchResultsPageTest") ;
-//		@SuppressWarnings("unchecked")
-//		Map<String, String> expectedSearchResult = (Map<String, String>)siteSearchResultsPageQueryResultMap.get("ExpectedSearchResultsPageResults") ;
-//		System.out.println("Expected:" + expectedSearchResult);
-//		// Add the logic for contents verification
-//        for (String key:inputParams.keySet()){
-//		Assert.assertTrue(updateMyInformationPage.isMessageDisplayed(inputParams.get(key.trim())));
-//        }
-//	}
+    @Test
+	public void updateAddressTestCase() throws Exception {
+		
+		logger.info("Checking and validating for the address update ...");
+		
+		@SuppressWarnings("unchecked")
+		Map<String, Object> siteSearchResultsPageQueryResultMap = (Map<String, Object>)getParsedData(testExpectedResultsDataFileName).get("UpdateMyInformationPageTest") ;
+		@SuppressWarnings("unchecked")
+		Map<String, String> expectedSearchResult = (Map<String, String>)siteSearchResultsPageQueryResultMap.get("ExpectedUpdateMyInformationResults") ;
+		System.out.println("Expected:" + expectedSearchResult);
+		// Add the logic for contents verification
+        for (String key:inputParams.keySet()){
+		Assert.assertTrue(updateMyInformationPage.isMessageDisplayed(inputParams.get(key.trim())));
+        }
+	}
 	
 //	@Test
 //	public void titleValidationTestCase() throws Exception {
