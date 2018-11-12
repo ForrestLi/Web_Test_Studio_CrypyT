@@ -36,12 +36,7 @@ jobs:
           paths:
             - ~/.m2
           key: v1-dependencies-{{ checksum "pom.xml" }}     
-      #- run :
-      #      command: chmod a+x chromedriver.exe
-      #      working_directory: ~/repo/automation-poc/src/main/resources
-      - run :
-            command: chmod a+x IEDriverServer.exe
-            working_directory: ~/repo/automation-poc/src/main/resources
+
       
       - run:
           name: Install latest version of ChromeDriver Sample
@@ -67,7 +62,12 @@ jobs:
             ls -al /usr/bin
             rm ~/repo/automation-poc/src/main/resources/chromedriver.exe
             ln -s  /usr/bin/chromedriver    ~/repo/automation-poc/src/main/resources/chromedriver.exe    
-      
+      # - run :
+      #      command: chmod a+x chromedriver.exe
+      #      working_directory: ~/repo/automation-poc/src/main/resources
+      - run :
+          command: chmod a+x IEDriverServer.exe
+          working_directory: ~/repo/automation-poc/src/main/resources     
           
       # run GUI tests!
       - run: echo "ls -al /home/circleci/repo/automation-poc/src"
