@@ -42,5 +42,5 @@ jobs:
       
       
       # run GUI tests!
-      - run: echo "GUI Testing started through mvn install"
-      - run: mvn install
+      - run: echo "GUI Testing started through mvn clean install"
+      - run: mvn clean install
