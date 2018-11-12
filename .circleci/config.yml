@@ -36,16 +36,16 @@ jobs:
           paths:
             - ~/.m2
           key: v1-dependencies-{{ checksum "pom.xml" }}     
-      - run :echo 'make chromedriver.exe executable'
+      - run :echo "make chromedriver.exe executable"
       - run :
             command: chmod a+x chromedriver.exe
             working_directory: ~/repo/automation-poc/src/main/resources
-      - run :echo 'make IEDriverServer.exe executable'
+      - run :echo "make IEDriverServer.exe executable"
       - run :
             command: chmod a+x IEDriverServer.exe
             working_directory: ~/repo/automation-poc/src/main/resources
       # run GUI tests!
-      - run: echo 'ls -al /home/circleci/repo/automation-poc/src'
+      - run: echo "ls -al /home/circleci/repo/automation-poc/src"
       - run: ls -al /home/circleci/repo/automation-poc/src
       - run: echo "GUI Testing started through mvn clean install"
       - run: 
