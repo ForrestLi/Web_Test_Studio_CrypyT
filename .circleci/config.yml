@@ -73,5 +73,5 @@ jobs:
       - run: ls -al /home/circleci/repo/automation-poc/src
       - run: echo "GUI Testing started through mvn clean install"
       - run: 
-            command: mvn clean install -X
+            command: mvn clean install
             working_directory: ~/repo/automation-poc
