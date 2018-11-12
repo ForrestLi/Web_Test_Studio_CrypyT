@@ -119,11 +119,6 @@
 		</dependency>		
 	 </dependencies>
 	<build>
-	   <resources>
-         <resource>
-            <directory>automation-poc</directory>
-         </resource>
-        </resources>
 		<pluginManagement>
 			<plugins>
 				<plugin>
