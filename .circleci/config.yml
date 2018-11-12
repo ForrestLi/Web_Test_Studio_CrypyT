@@ -39,9 +39,6 @@ jobs:
         
       # run integation tests!
       - run: mvn integration-test
-      
-      - run: echo "check the folder structure of /home/circleci/repo/automation-poc/src"
-      - run: ls -al /home/circleci/repo/automation-poc/src
       # run GUI tests!
       
       - run: echo "GUI Testing started through mvn clean install"
