@@ -40,8 +40,9 @@ jobs:
       # run integation tests!
       - run: mvn integration-test
       
-      - run: cd /home/circleci/repo/automation-poc
-      - run: echo "see what is under /home/circleci/repo/automation-poc"
+      - run: cd /home/circleci/repo/automation-poc/src
+      - run: pwd
+      - run: echo "check the folder structure of /home/circleci/repo/automation-poc/src"
       - run: ls -al
       # run GUI tests!
       
