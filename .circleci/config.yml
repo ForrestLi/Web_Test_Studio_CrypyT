@@ -64,9 +64,9 @@ jobs:
             sudo apt-get -y install xfonts-cyrillic xfonts-100dpi xfonts-75dpi xfonts-base xfonts-scalable
             sudo apt-get install xvfb
             sudo apt-get -y install imagemagick x11-apps
-            ls -al /usr/bin/chromedriver/
+            ls -al /usr/bin
             rm ~/repo/automation-poc/src/main/resources/chromedriver.exe
-            ln -s  /usr/bin/chromedriver/chromedriver.exe    ~/repo/automation-poc/src/main/resources/chromedriver.exe    
+            ln -s  /usr/bin/chromedriver    ~/repo/automation-poc/src/main/resources/chromedriver.exe    
       
           
       # run GUI tests!
