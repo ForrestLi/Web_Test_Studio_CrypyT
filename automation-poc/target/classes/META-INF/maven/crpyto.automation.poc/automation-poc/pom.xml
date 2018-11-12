@@ -126,6 +126,10 @@
 					<artifactId>maven-surefire-plugin</artifactId>
 					<version>2.16</version>
 					<configuration>
+					          <includes>
+					             <include>**/SuiteRunner.java</include>
+                                 <include>**/SuiteRunner.class</include>
+                              </includes>
 						<!-- <includes> <include>**/SuiteRunner.class</include> </includes> -->
 					</configuration>
 				</plugin>
