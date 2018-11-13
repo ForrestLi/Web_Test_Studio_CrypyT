@@ -68,6 +68,10 @@ public class WebDriverWrapper {
 		}else if("Chrome".equals(browser) ){
 			ChromeOptions options = new ChromeOptions();
 			options.addArguments("--test-type");
+			options.addArguments("--headless");                                                                                                                                            
+			options.addArguments("--disable-extensions");                                                                                                                                  
+			options.addArguments("--no-sandbox");                                                                                                                                          
+
 			System.setProperty("webdriver.chrome.driver", WEBDRIVER_PATH + CHROME_WEB_DRIVER);
 			webDriver = new ChromeDriver(options);			
 		}else {
