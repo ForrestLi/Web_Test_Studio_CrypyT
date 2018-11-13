@@ -30,16 +30,11 @@ public class SignInPage extends AbstractPage {
 		return this.userLoggedIn ;
 	}
 	public boolean doLogin() throws InterruptedException{	
-		//Click the log on button; <a id="authenticate" class="redBtn" href="/1/2/3/personal/online-services/personal-internet-banking/view-accounts/view-accounts-post-registration-email" title="Log on to Personal Internet Banking"><span>Log on</span></a>
 		webDriver.getObject("//button[@class='btn btn-default']").click();
-		//Enter the user name; <input id="userID" name="userid" type="text" value="" />
 		webDriver.getObjectById("email").sendKeys(email);
 		webDriver.getObjectById("password").sendKeys(password);
-		//Click the log on button; <input id="enter" class="enter" type="submit" value="Log on" title="Log on to Personal Internet Banking" />
-		webDriver.getObject("//button[@class='full-width btn btn-primary']").click();
-		
+		webDriver.getObject("//button[@class='full-width btn btn-primary']").click();		
 		Thread.sleep(500);
-		//check if log out link is displayed to assert that you have loggen in
 		if(webDriver.getObject("//div[@class='myTokens']").getText().contains("My Binfinity Tokens") ){
 			userLoggedIn= true;
 			logger.info("Login successful for email: " + email);
