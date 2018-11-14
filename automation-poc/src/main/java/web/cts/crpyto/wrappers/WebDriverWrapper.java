@@ -72,7 +72,7 @@ public class WebDriverWrapper {
 			options.addArguments("--disable-dev-shm-usage"); 
 			options.addArguments("--disable-extensions");                                                                                                                                  
 			options.addArguments("--no-sandbox");  
-			options.setExperimentalOptions("useAutomationExtension", false);
+			//options.setExperimentalOptions("useAutomationExtension", false);
 
 			System.setProperty("webdriver.chrome.driver", WEBDRIVER_PATH + CHROME_WEB_DRIVER);
 			webDriver = new ChromeDriver(options);			
