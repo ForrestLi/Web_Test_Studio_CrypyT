@@ -7,7 +7,7 @@ jobs:
   build:
     docker:
       # specify the version you desire here
-      - image: circleci/openjdk:8-jdk-browsers
+      - image: circleci/openjdk:8-jdk
       # Specify service dependencies here if necessary
       # CircleCI maintains a library of pre-built images
       # documented at https://circleci.com/docs/2.0/circleci-images/
@@ -64,6 +64,8 @@ jobs:
       # - run :
       #      command: chmod a+x chromedriver.exe
       #      working_directory: ~/repo/automation-poc/src/main/resources
+      
+      
       - run :
           command: chmod a+x IEDriverServer.exe
           working_directory: ~/repo/automation-poc/src/main/resources     
