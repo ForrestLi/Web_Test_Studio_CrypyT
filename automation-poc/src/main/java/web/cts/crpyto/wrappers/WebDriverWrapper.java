@@ -67,7 +67,7 @@ public class WebDriverWrapper {
 			webDriver = new InternetExplorerDriver();
 		}else if("Chrome".equals(browser) ){
 			ChromeOptions options = new ChromeOptions();
-			//options.addArguments("--test-type");
+			options.addArguments("--test-type");
 			options.addArguments("--headless");
 			//options.addArguments("--window-size=1920,1080");
 			options.addArguments("--start-maximized");
