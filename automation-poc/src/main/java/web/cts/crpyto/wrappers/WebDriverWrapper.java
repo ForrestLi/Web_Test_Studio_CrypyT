@@ -69,7 +69,7 @@ public class WebDriverWrapper {
 			ChromeOptions options = new ChromeOptions();
 			options.addArguments("--test-type");
 			options.addArguments("--headless");
-			//options.addArguments("--window-size=1920,1080");
+			options.addArguments("--window-size=1920,1080");
 			options.addArguments("--start-maximized");
 			options.addArguments("--disable-dev-shm-usage"); 
 			options.addArguments("--disable-extensions");                                                                                                                                  
